@@ -1,0 +1,6 @@
+# Ignore the virtual environment
+venv/
+app/venv/
+**/__pycache__/
+*.pyc
+*.db
