@@ -9,6 +9,8 @@ def tokenizer(text : str):
             temp+=letter
         elif letter.isupper():
             temp+=letter.lower()
+        elif letter in ["'","-","_"] :
+            temp+=letter
         else:
             if (temp not in omit) and temp:
                 final_list.append(temp)
