@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 from app.services.tokenize import tokenizer
 from app.services.analyze import analyzer
+from app.services.search import searcher
 
 app=FastAPI()
 
@@ -20,3 +21,7 @@ def tokenize(text:str):
 @app.post("/analyze")
 def analyze(text:str):
     return analyzer(text)
+
+@app.post("/search")
+def search(word:str,records: list[str]):
+    return searcher(word,records)
