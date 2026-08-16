@@ -504,7 +504,3 @@ http://127.0.0.1:8000/docs
 ```
 
 to access the interactive API documentation.
-
-## License
-
-Add your project's license information here.
